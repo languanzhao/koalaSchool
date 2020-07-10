@@ -1,0 +1,182 @@
+@import '@/uview/index.scss';
+@import  '@/static/iconfont/iconfont.css';
+//页面背景色
+.noneNull{
+	text-align: center;
+	margin-top: 100rpx;
+}
+page{
+	font-size: 28rpx;
+	font-family: '微软雅黑';
+}
+$theme-color:#12ada9;
+$page-background:#f5f5f5;
+image{
+	width: 100%;
+	height: 100%;
+}
+//弹窗统一样式
+	.uniPopup-toast {
+		background: #fff;
+		width: 600rpx;
+		margin: 0 auto;
+		padding-bottom: 30rpx;
+		border-radius: 20rpx;
+		position: relative;
+
+		.uniPopup-title {
+			padding: 40rpx 0 27rpx;
+			text-align: center;
+			font-size: 35rpx;
+			font-weight: bold;
+		}
+
+		.uniPopup-summary {
+			font-size: 26rpx;
+			padding: 0 40rpx;
+			color: #252525;
+		}
+		.uniPopup-buttons{
+			padding: 20rpx 30rpx;
+			display: flex;
+			justify-content: space-between;
+			color: #fff;
+			text-align: center;
+			font-size: 30rpx;
+			.cancel{
+				width: 45%;
+				height: 76rpx;
+				line-height: 76rpx;
+				background: #828387;
+				border-radius:10rpx;
+			}
+			.confirm{
+				width: 45%;
+				height: 76rpx;
+				line-height: 76rpx;
+				border-radius:10rpx;
+				background: $theme-color;
+			}
+		}
+		.icon-quxiao {
+			position: absolute;
+			top: -72rpx;
+			right: 0;
+			width: 42rpx;
+			height: 42rpx;
+			font-size: 42rpx;
+			color: #fff;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			right: 20rpx;
+			top: -30rpx;
+			width: 2rpx;
+			height: 30rpx;
+			background: #fff;
+		}
+	}
+// 底部统一按钮 一个
+.fixed_bottom_btn_place{
+	height: 100rpx;
+	.fixed_bottom_btn{
+		position: fixed;
+		bottom: 30rpx;
+		left: 0;
+		width: 100%;
+		box-sizing: border-box;
+		.word{
+			color: #fff;
+			text-align: center;
+			padding: 20rpx 0;
+			margin: 0 30rpx;
+			background: #12ada9;
+			border-radius: 10rpx;
+		}
+	}
+}
+//底部统一按钮 两个
+.fixed-bottom-btn-two{
+	height: 100rpx;
+	.fixed-bottom-btn{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		background: #fff;
+		width: 100%;
+		height: 100rpx;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 30rpx;
+		box-sizing: border-box;
+		text-align: center;
+		color: #fff;
+		.left{
+			width: 30%;
+			background: #828387;
+			margin-right: 30rpx;
+			border-radius: 10rpx;
+			padding: 20rpx 0;
+		}
+		.right{
+			width: 70%;
+			background: #12ada9;
+			border-radius: 10rpx;
+			padding: 20rpx 0;
+		}
+	}
+}
+//垂直居中
+@mixin flex-c {
+	display: flex;
+	align-items: center;
+}
+//均匀分布(左右)
+@mixin flex-c-a {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+//两边分布(左右)
+@mixin flex-c-b {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+//上下左右居中分布
+@mixin flex-c-c {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+//两边分布(上下)
+@mixin flex-b-c {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+//圆形
+@mixin w-h-br($w-h) {
+	width: $w-h;
+	height: $w-h;
+	border-radius: 50%;
+	overflow: hidden;
+}
+//单行文本省略
+@mixin line-clamp-one {
+	overflow:hidden;
+	white-space: nowrap; 
+	text-overflow: ellipsis;
+}
+//多行文本省略
+@mixin line-clamp-more($num:2) {
+	-webkit-line-clamp:$num; 
+	display: -webkit-box; 
+	-webkit-box-orient:vertical;
+	overflow:hidden; 
+	text-overflow: ellipsis;
+	word-break:break-all; // 多行超出文本,数字,字母长度自动省略
+}

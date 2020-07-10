@@ -1,0 +1,469 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarBackgroundColor": "#12ada9",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		
+		{
+			"path": "pages/dataDetail/index",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		},
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "用户注册",
+				"navigationBarBackgroundColor": "#12ada9",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/login/forget",
+			"style": {
+				"navigationBarTitleText": "忘记密码",
+				"navigationBarBackgroundColor": "#12ada9",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/login/enterPage",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"app-plus": {}
+			}
+		},
+		{
+			"path": "pages/news/index",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/news/chat",
+			"style": {
+				"navigationBarTitleText": "联系客服",
+				"navigationBarBackgroundColor": "#12ada9",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/news/webView",
+			"style": {
+				"navigationBarTitleText": "考拉上学助手",
+				"navigationBarBackgroundColor": "#12ada9",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#12ada9",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/search/index",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"navigationBarBackgroundColor": "#12ada9",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/search/searchResult",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#12ada9",
+				"navigationBarTextStyle": "white"
+			}
+		}
+	],
+	"subPackages": [{
+			"root": "sub_user",
+			"pages": [{
+					"path": "pages/school-collected/index",
+					"style": {
+						"navigationBarTitleText": "我收藏的院校",
+						"enablePullDownRefresh": true,
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/consulted/index",
+					"style": {
+						"navigationBarTitleText": "我咨询过的院校",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "pages/personalInfo/index",
+					"style": {
+						"navigationBarTitleText": "个人信息",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/personalInfo/info-edit",
+					"style": {
+						"navigationBarTitleText": "编辑信息",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/personalInfo/address",
+					"style": {
+						"navigationBarTitleText": "编辑通讯地址",
+						"navigationBarTextStyle": "white",
+						"navigationBarBackgroundColor": "#12ada9"
+					}
+				},
+				{
+					"path": "pages/personalInfo/addressList",
+					"style": {
+						"navigationBarTitleText": "通讯地址",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh": true,
+						"navigationBarBackgroundColor": "#12ada9"
+					}
+				},
+				{
+					"path": "pages/personalInfo/houseAddress",
+					"style": {
+						"navigationBarTitleText": "编辑户籍地址",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/wallet/index",
+					"style": {
+						"navigationBarTitleText": "钱包",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/wallet/account",
+					"style": {
+						"navigationBarTitleText": "我的账单",
+						"enablePullDownRefresh": true,
+						"navigationBarTextStyle": "white",
+						"navigationBarBackgroundColor": "#12ada9"
+					}
+				},
+				{
+					"path": "pages/wallet/accountDetail",
+					"style": {
+						"navigationBarTitleText": "账单详情",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "pages/progress/index",
+					"style": {
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTitleText": "进度详情",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/progress/list",
+					"style": {
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTitleText": "全部进度",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "pages/progress/leaveSchool",
+					"style": {
+						"navigationBarTitleText": "取消报名",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/about/index",
+					"style": {
+						"navigationBarTitleText": "关于我们",
+						"navigationBarTextStyle": "white",
+						"navigationBarBackgroundColor": "#12ada9"
+					}
+				},
+				{
+					"path": "pages/invited/index",
+					"style": {
+						"navigationBarTitleText": "邀约进度",
+						"enablePullDownRefresh": true,
+						"navigationBarTextStyle": "white",
+						"navigationBarBackgroundColor": "#12ada9"
+					}
+				},
+				{
+					"path": "pages/poster/index",
+					"style": {
+						"navigationBarTitleText": "邀请"
+					}
+				},
+				{
+					"path": "pages/intention/index",
+					"style": {
+						"navigationBarTitleText": "报读意向"
+					}
+				},
+				{
+					"path": "pages/bindwx/index",
+					"style": {
+						"navigationBarTitleText": "绑定微信",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/personalInfo/bindPhone",
+					"style": {
+						"navigationBarTitleText": "绑定手机号",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/about/safe",
+					"style": {
+						"navigationBarTitleText": "账号安全",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/personalInfo/schoolChoose",
+					"style": {
+						"navigationBarTitleText": "院校",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		{
+			"root": "sub_school",
+			"pages": [{
+					"path": "pages/detail/index",
+					"style": {
+						"navigationBarTitleText": "院校详情",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/apply/index",
+					"style": {
+						"navigationBarTitleText": "求学登记",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/apply/transferAccounts",
+					"style": {
+						"navigationBarTitleText": "上传转账凭证",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/detail/img-video",
+					"style": {
+						"navigationBarTitleText": "图片视频",
+						"enablePullDownRefresh": true,
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				}, {
+					"path": "pages/apply/orderTransferAccount",
+					"style": {
+						"navigationBarTitleText": "预报名费转账",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/detail/detailPoster",
+					"style": {
+						"navigationBarTitleText": "分享院校",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		{
+			"root": "sub_tim",
+			"pages": [
+				{
+				"path": "pages/joinUs/index",
+				"style": {
+					"navigationBarTitleText": "院校入驻",
+					"navigationBarBackgroundColor": "#12ada9",
+					"navigationBarTextStyle": "white"
+				}
+			}, 
+			{
+				"path": "pages/taskCenter/index",
+				"style": {
+					"navigationBarTitleText": "任务中心",
+					"navigationBarBackgroundColor": "#12ada9",
+					"navigationBarTextStyle": "white"
+				}
+			},
+			{
+				"path": "pages/taskCenter/list",
+				"style": {
+					"navigationBarTitleText": "上传任务",
+					"navigationBarBackgroundColor": "#12ada9",
+					"navigationBarTextStyle": "white"
+				}
+			}
+			]
+		},
+		{
+			"root": "sub_adviser",
+			"pages": [{
+					"path": "pages/personalInfo/index",
+					"style": {
+						"navigationBarTitleText": "个人信息",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/personalInfo/IDAuth",
+					"style": {
+						"navigationBarTitleText": "实名认证",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/wallet/index",
+					"style": {
+						"navigationBarTitleText": "钱包"
+					}
+				},
+				{
+					"path": "pages/wallet/accountList",
+					"style": {
+						"navigationBarTitleText": "账单明细",
+						"enablePullDownRefresh": true,
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/wallet/withdraw",
+					"style": {
+						"navigationBarTitleText": "提现明细",
+						"enablePullDownRefresh": true,
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/wallet/withdrawDetail",
+					"style": {
+						"navigationBarTitleText": "提现详情",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "pages/team/index",
+					"style": {
+						"navigationBarTitleText": "考拉上学团队",
+						"navigationBarBackgroundColor": "#12ada9",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText":"",
+		// #ifdef H5
+		"navigationStyle": "custom", //微信h5端添加上去
+		// #endif
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#6d6d6e",
+		"selectedColor": "#040000",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-current.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/category/category",
+				"iconPath": "static/tabbar/category.png",
+				"selectedIconPath": "static/tabbar/category-current.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/news/index",
+				"iconPath": "static/tabbar/news.png",
+				"selectedIconPath": "static/tabbar/news-current.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/tabbar/user.png",
+				"selectedIconPath": "static/tabbar/user-current.png",
+				"text": "我的"
+			}
+		]
+	},
+	"easycom": {
+		"^u-(.*)": "@/uview/components/u-$1/u-$1.vue"
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "你的位置信息将用于小程序位置接口的效果展示"
+		}
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": []
+	}
+}
